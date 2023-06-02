@@ -6,8 +6,8 @@ class Pais(models.Model):
     
 class Ciudad(models.Model):
     nombre = models.CharField(max_length=50)
-    codigo = models.DecimalField(max_length=10)
-    def __str__(self):
+    codigo = models.DecimalField(max_digits=10, decimal_places=2)
+    def _str_(self):
         return self.nombre
 
 
